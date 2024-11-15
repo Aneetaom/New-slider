@@ -1,0 +1,55 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+    border-color: #333;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    right: 10px;
+    transform: translateY(-50%);
+}
